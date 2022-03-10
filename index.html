@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Weather Report</h1>
+    </div>
+    <div class="topnav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <div class="citySearch">
+            <input  id="cityTextIn" type="text" placeholder="Search by city..."/>
+            <button id = "sendButton">Check</button> 
+        </div>
+    </div>
+    <h2 id = "headLine" class="headLine">Search by city name to check weather</h2>
+    <div>
+        <table class="temReport" id="weDet">
+            <tr>
+              <td id = "Temp"></td>
+              <td>   </td><td>   </td>
+              <td id = "tem"></td>
+            </tr>
+            <tr>
+              <td id="TempMax"></td>
+              <td>   </td><td>   </td>
+              <td id="temMax"></td>
+            </tr>
+            <tr>
+                <td id="TempMin"></td>
+                <td>   </td><td>   </td>
+                <td id="temMin"></td>
+            </tr>
+            <tr><td></td><td></td><td></td></tr>
+            <tr>
+                <td id="FeelLike" style="color: crimson;"></td>
+                <td>   </td><td>   </td>
+                <td id="feeLik" style="color: crimson;"></td>
+            </tr>
+            <tr>
+                <td><br/></td>
+                <td><br/></td>
+                <td><br/></td>
+            </tr>
+            <tr>
+                <td id="win"></td>
+                <td>   </td><td>   </td>
+                <td id="winSpe"></td>
+            </tr>
+            <tr>
+                <td id="pre"></td>
+                <td>   </td><td>   </td>
+                <td id="pres"></td>
+            </tr>
+            <tr>
+                <td id="hum"></td>
+                <td>   </td><td>   </td>
+                <td id="humi"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
