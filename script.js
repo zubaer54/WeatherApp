@@ -1,5 +1,5 @@
 function getWeather(cityName) {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=5fd1c330f2d7a8b5c51e5b3aa0ee7677&units=metric`  
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=5fd1c330f2d7a8b5c51e5b3aa0ee7677&units=metric`  
     // show loading
     const hlElement = document.getElementById("headLine");
     hlElement.innerText = "Loading..."
